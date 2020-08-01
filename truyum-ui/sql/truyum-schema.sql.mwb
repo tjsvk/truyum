@@ -1,0 +1,21 @@
+create table menu_items
+(m_id int default null,
+Name_user varchar(100) default null, 
+price int default null,
+active_1 varchar(100) default null, 
+Date_of_Launch date default null,
+Category varchar(100) default null,
+Free_delivery varchar(10) default null,primary key (Name_user)
+)ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8$$
+
+create table user_1
+(us_id int not null auto_increment,
+us_name varchar(100) default null,primary key(us_id) 
+)ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8$$
+
+create table cart
+(c_id int(11) not null auto_increment,
+c_us_id varchar(100) default null,
+c_pr_id varchar(100) default null,primary key(c_id) 
+)ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+
