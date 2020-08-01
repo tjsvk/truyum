@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getml.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src=".js/script.js"></script>
+    <title>Cart Empty</title>
+</head>
+
+<body>
+    <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+    <div class="ml-layout ml-js-layout ml-layout--fixed-header">
+        <header class="ml-layout__header">
+            <div class="ml-layout__header-row">
+                <!-- Title -->
+                <span class="ml-layout-title">truYum</span>
+                <!-- Icon -->
+                <img class="ml-layout-icon logo" src="images/truyum-logo-light.png"></img>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="ml-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="ml-navigation">
+                    <a class="ml-navigation__link" href="">Menu</a>
+                    <a class="ml-navigation__link" href="">Cart</a>
+                </nav>
+            </div>
+        </header>
+        <div class="ml-layout__drawer">
+            <span class="ml-layout-title">Select Role</span>
+            <nav class="ml-navigation">
+                <a class="ml-navigation__link" href="menu-item-list-admin.html">Admin</a>
+                <a class="ml-navigation__link" href="menu-item-list-customer.html">Customer</a>
+            </nav>
+        </div>
+        <main class="ml-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <div class="ml-grid">
+                    <div class="ml-cell ml-cell--3-col"></div>
+                    <div class="ml-cell--6-col cart-empty">
+                        <caption>
+                            <h3>Cart</h3>
+                        </caption>
+                        <br><br>
+                        <p>No items in cart. Use 'Add to Cart' option in <a href="#">Menu Item List</a>.</p>
+
+                    </div>
+                    <div class="ml-cell ml-cell--3-col"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="ml-mini-footer">
+            <div class="ml-mini-footer__left-section">
+                <div class="ml-logo">Copyright &copy; 2019</div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

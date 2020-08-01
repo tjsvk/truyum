@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="./style/truyum.css">
+    <script defer src=".js/script.js"></script>
+    <title>Cart Notification</title>
+</head>
+
+<body>
+    <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+    <div class="ml-layout ml-js-layout ml-layout--fixed-header">
+        <header class="ml-layout__header">
+            <div class="ml-layout__header-row">
+                <!-- Title -->
+                <span class="ml-layout-title">truYum</span>
+                <!-- Icon -->
+                <img class="ml-layout-icon logo" src="images/truyum-logo-light.png"></img>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="ml-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="ml-navigation">
+                    <a class="ml-navigation__link" href="">Menu</a>
+                    <a class="ml-navigation__link" href="">Cart</a>
+                </nav>
+            </div>
+        </header>
+        <div class="ml-layout__drawer">
+            <span class="ml-layout-title">Select Role</span>
+            <nav class="ml-navigation">
+                <a class="ml-navigation__link" href="menu-item-list-admin.html">Admin</a>
+                <a class="ml-navigation__link" href="menu-item-list-customer.html">Customer</a>
+            </nav>
+        </div>
+        <main class="ml-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <div class="ml-grid">
+                    <div class="ml-cell ml-cell--3-col"></div>
+                    <div class="ml-cell--6-col">
+                        <table class="ml-data-table ml-js-data-table">
+                            <caption>
+                                <h3>Cart</h3>
+                                <p class="notif">Item Removed From Cart Successfully</p>
+                            </caption>
+                            <br><br>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: left">Name</th>
+                                    <th style="text-align: center">Free Delivery</th>
+                                    <th style="text-align: right">Price</th>
+                                    <th style="text-align: center"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-table">
+                                <tr>
+                                    <td>Sandwich</td>
+                                    <td>Yes</td>
+                                    <td>Rs. 99</td>
+                                    <td><a href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Burger</td>
+                                    <td>No</td>
+                                    <td>Rs. 129</td>
+                                    <td><a href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Pizza</td>
+                                    <td>No</td>
+                                    <td>Rs. 149</td>
+                                    <td><a href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>Rs. 377</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ml-cell ml-cell--3-col"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="ml-mini-footer">
+            <div class="ml-mini-footer__left-section">
+                <div class="ml-logo">Copyright &copy; 2019</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
